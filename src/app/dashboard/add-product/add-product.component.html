@@ -1,0 +1,7 @@
+<h2>Add Product</h2>
+    <select [(ngModel)]="selectedCategory">
+      <option *ngFor="let category of categories" [value]="category">{{ category }}</option>
+    </select>
+    <input [(ngModel)]="productName" placeholder="Enter product name">
+    <input [(ngModel)]="productDescription" placeholder="Enter product description">
+    <button (click)="addProduct()">Add</button>

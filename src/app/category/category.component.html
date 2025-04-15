@@ -1,0 +1,13 @@
+<div class="category-container">
+    <h2>{{ categoryName }} Products</h2>
+    
+    <div *ngIf="products.length === 0" class="no-products">
+      No products available in this category
+    </div>
+  
+    <div *ngFor="let product of products" class="product-card">
+      <h3>{{ product.name }}</h3>
+      <p>{{ product.description }}</p>
+    </div>
+  </div>
+
