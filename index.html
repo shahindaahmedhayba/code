@@ -1,225 +1,401 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shahinda | Portfolio</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Document</title>
 </head>
 <body>
-
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" style="font-size: 30px;" href="#">Shahinda</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-          <li class="nav-item"><a class="nav-link" href="#service">Service</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg" style="position: absolute; top: 0; left: 0; width: 100%; z-index: 1000;">
+        <div class="container-fluid">
+            <a class="navbar-brand" style="text-decoration: none; font-size: 1rem; color: white;" href="#">Pays n'play</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                            Shop
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                            Service
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: white;" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: white;" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: white;" href="#">Contact</a>
+                    </li>
+                </ul>
+                <div class="d-flex ms-lg-3 mt-2 mt-lg-0">
+                    <button class="btn btn-primary" style="border-radius: 100px; --bs-navbar-toggler-border-color: #fff;" type="submit">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+   <img src="Section_Hero.png" class="w-100" alt="">
+   <div class="shop" style="margin-top: 30px; margin-left: 100px; margin-right: 30px;" >
+     <h4>Shop</h4>
+     <hr>
+   </div>
+  <section id="portfolio">
+     <div class="container">
+        <div class="text-center my-4">
+           <h5>Featured Products</h5> 
+        </div>
+        <div class="text-center mb-4">
+          <button class="btn btn-outline-secondary btn-filter" data-filter="random">Random</button>
+          <button class="btn btn-outline-secondary btn-filter" data-filter="cat">Cat</button>
+          <button class="btn btn-outline-secondary btn-filter" data-filter="dogs">Dogs</button>
+          <button class="btn btn-outline-secondary btn-filter" data-filter="birds">Birds</button>
+       </div>
+        <div class="row gallery">
+           <div class="col-md-4 filter-item random cat">
+               <img src="chemarro_about_a_design_of_a_pet_food_package_d4a19910-8b5f-4d58-b551-ed8984c3d276.png" class="img-fluid" alt="">
+               <div class="content">
+                 <h1>Multivitamin For Cat</h1>
+                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, dolor. Eius, reprehenderit reiciendis delectus praesentium similique eos iure unde voluptatibus.</p>
+                 <button type="button" class="btn btn-primary text-white" data-bs-toggle="button">Add To Card</button>
+               </div>
+           </div>
+           <div class="col-md-4 filter-item random cat">
+               <img src="Product Card.png" class="img-fluid" alt="">
+               <div class="content">
+                <h1>Cat Food</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, dolor. Eius, reprehenderit reiciendis delectus praesentium similique eos iure unde voluptatibus.</p>
+                <button type="button" class="btn btn-primary text-white" data-bs-toggle="button">Add To Card</button>
+               </div>
+           </div>
+           <div class="col-md-4 filter-item random dogs">
+               <img src="Product Card (1).png" class="img-fluid" alt="">
+               <div class="content">
+                  <h1>Dog Food</h1>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, dolor. Eius, reprehenderit reiciendis delectus praesentium similique eos iure unde voluptatibus.</p>
+                  <button type="button" class="btn btn-primary text-white" data-bs-toggle="button">Add To Card</button>
+               </div>
+           </div>
+           <div class="col-md-4 filter-item random dogs">
+               <img src="King_Comp_Design_a_set_of_dog_bowls_for_Valentines_Day_that_wil_1b5a64be-b0b1-4784-8af5-8c7a7239cbad.png" class="img-fluid" alt="">
+               <div class="content">
+                <h1>Pet Plate</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, dolor. Eius, reprehenderit reiciendis delectus praesentium similique eos iure unde voluptatibus.</p>
+                <button type="button" class="btn btn-primary text-white" data-bs-toggle="button">Add To Card</button>
+               </div>
+           </div>
+           <div class="col-md-4 filter-item random birds">
+               <img src="lalalalasong_korean_soju_PET_plastic_Bottle_design_white_backgr_939b5eba-eb5f-423a-98bc-30cb6231df7a.png" class="img-fluid" alt="">
+               <div class="content">
+                 <h1>Bird Water</h1>
+                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, dolor. Eius, reprehenderit reiciendis delectus praesentium similique eos iure unde voluptatibus.</p>
+                 <button type="button" class="btn btn-primary text-white" data-bs-toggle="button">Add To Card</button>
+               </div>
+           </div>
+           <div class="col-md-4 filter-item random dogs">
+               <img src="Property 1=Default.png" class="img-fluid" alt="">
+               <div class="content">
+                <h1>Dog Water</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, dolor. Eius, reprehenderit reiciendis delectus praesentium similique eos iure unde voluptatibus.</p>
+                <button type="button" class="btn btn-primary text-white" data-bs-toggle="button">Add To Card</button>
+               </div>
+           </div>
+           <hr class="hr" style="margin-top: 70px;">
+        </div>
       </div>
+    </section>
+    <div class="Service" style="margin-left: 100px; margin-top: 70px; margin-right: 30px;">
+        <h4>Service</h4>
+        <hr>
     </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <section class="hero text-center py-5">
-    <img src="1000319678.jpg" alt="My Photo" class="profile-img">
-    <div class="container">
-      <h1>Frontend Web Developer</h1>
-      <p>I'm a passionate Frontend Developer learning modern web technologies.</p>
-    </div>
-  </section>
- 
-  <!-- About Section -->
-  <section id="about" class="about-section text-center py-5">
-   <div class="container">
-    <h2>About Me</h2>
-    <p class="lead mt-3">
-      Hello! I'm <strong>Shahinda Hayba</strong>, a passionate Frontend Developer with a deep love for web technologies.
-      I specialize in crafting modern, responsive, and interactive web applications using 
-      <strong>HTML, CSS, JavaScript, TypeScript, Angular, and Bootstrap</strong> My goal is to build user-friendly and visually appealing websites while continuously learning and exploring new advancements in web development. 
-      I enjoy solving coding challenges and improving website performance to enhance the user experience.
-    </p>
-    <div class="contact-info mt-4">
-      <p>
-        <strong class="name">Name:</strong> <span class="name-text"> Shahinda Hayba</span> 
-        &nbsp; | &nbsp; 
-        <strong class="phone">Phone:</strong> <span class="phone-text"> +20 101 203 9641</span>
-      </p>
-      <p>
-        <strong class="email">Email:</strong> <span class="email-text"> shahindahayba3@gmail.com</span>
-        &nbsp; | &nbsp; 
-        <strong class="address">Address:</strong> <span class="address-text"> Fayoum, Egypt</span>
-      </p>
-      <p>
-        <strong class="degree">Degree:</strong> <span class="degree-text"> Bachelor's Degree</span>
-        &nbsp; | &nbsp; 
-        <strong class="freelance">freelance:</strong> <span class="freelance-text"> Available</span>
-      </p>
-    </div>
-  </div>
- </section>
-
-
-  <!-- Skills Section -->
-  <section id="skills" class="py-5 text-center">
-    <div class="container">
-      <h2>My Skills</h2>
-      <div class="row mt-4">
-
-        <!-- Technical Skills -->
-        <div class="col-md-6">
-          <h3>Technical Skills</h3>
-          <ul class="list-group">
-            <li class="list-group-item">HTML</li>
-            <li class="list-group-item">CSS</li>
-            <li class="list-group-item">JavaScript & TypeScript</li>
-            <li class="list-group-item">Bootstrap</li>
-            <li class="list-group-item">Git & GitHub</li>
-            <li class="list-group-item">Angular Js</li>
-          </ul>
-        </div>
-
-        <!-- Soft Skills -->
-        <div class="col-md-6">
-          <h3>Soft Skills</h3>
-          <ul class="list-group">
-            <li class="list-group-item">Team Work</li>
-            <li class="list-group-item">Problem Solving</li>
-            <li class="list-group-item">Communication</li>
-            <li class="list-group-item">Time Management</li>
-            <li class="list-group-item">Stress Management</li>
-            <li class="list-group-item">Flexibility & Adaptability</li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
- <!-- My Services Section -->
- <section id="service" class="py-5 text-center">
-  <div class="container">
-    <h2>My Services</h2>
-    <div class="row mt-4 justify-content-center gap-4">
-      
-      <!-- Service 1 -->
-      <div class="col-md-5 col-md-6 col-sm-12">
-        <div class="service-box p-4 shadow rounded">
-          <i class="fa-solid fa-code fa-3x text-primary mb-3"></i>
-          <h3>Web Development</h3>
-          <p>"I develop modern, interactive, and responsive web applications using HTML, CSS, JavaScript, TypeScript, and Angular. My focus is on delivering seamless UX/UI, ensuring fast performance, accessibility, and visually engaging experiences."</p>
-        </div>
-      </div>
-
-      <!-- Service 2 -->
-      <div class="col-md-5 col-md-6 col-sm-12">
-        <div class="service-box p-4 shadow rounded">
-          <i class="fa-solid fa-mobile-screen-button fa-3x text-success mb-3"></i>
-          <h3>Responsive Design</h3>
-          <p>"I create fluid, mobile-friendly designs using CSS Flexbox, Grid, and media queries. I ensure that every website adapts seamlessly to all screen sizes, offering an intuitive, accessible, and visually appealing user experience."</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
- </section>
- <!-- Projects Section -->
- <section id="projects" class="py-5 text-center">
-  <div class="container">
-    <h2>My Projects</h2>
-    <div class="row mt-4">
-      
-      <!-- Project 1 -->
-      <div class="col-md-4 col-sm-6">
-        <div class="card project-card">
-          <img src="Screenshot_10-3-2025_2012_.jpeg" class="card-img-top" alt="Project 1">
-          <div class="card-body">
-            <a href="c:\Users\Windows 10 Pro\css\session2\index.html" target="_blank" class="btn btn-primary">View Project</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project 2 -->
-      <div class="col-md-4 col-sm-6">
-        <div class="card project-card">
-          <img src="Section_Hero.png" class="card-img-top" alt="Project 2">
-          <div class="card-body">
-            <a href="c:\Users\Windows 10 Pro\Bootstrap\session2\index.html" target="_blank" class="btn btn-primary">View Project</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project 3 -->
-      <div class="col-md-4 col-sm-6">
-        <div class="card project-card">
-          <img src="Screenshot_10-3-2025_211237_localhost.jpeg" class="card-img-top" alt="Project 3">
-          <div class="card-body">
-            <a href="https://github.com/shahindaahmedhayba/angular.git" target="_blank" class="btn btn-primary">View Project</a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
- </section>
-
-
-   
-   <!-- Contact Section -->
- <section id="contact" class="py-5 text-center" style=" background: linear-gradient(135deg, #fdfcfb, #e2d1c3);">
-  <div class="container">
-    <h2>Contact Me</h2>
-    <p>Let's work together to build something amazing!</p>
     
-    <form action="https://formspree.io/f/{your_form_id}" method="POST" class="mx-auto w-50 w-md-75 px-3">
-      <div class="mb-3">
-        <label for="name" class="form-label">Name</label>
-        <input type="text" id="name" name="name" class="form-control" placeholder="Your Name" required>
-      </div>
-      
-      <div class="mb-3">
-        <label for="email" class="form-label">Email</label>
-        <input type="email" id="email" name="email" class="form-control" placeholder="Your Email" required>
-      </div>
-
-      <div class="mb-3">
-        <label for="phone" class="form-label">phone</label>
-        <input type="phone" id="phone" name="phone" class="form-control" placeholder="Your phone" required>
-      </div>
-      
-      <div class="mb-3">
-        <label for="message" class="form-label">Message</label>
-        <textarea id="message" name="message" rows="4" class="form-control" placeholder="Your Message" required></textarea>
-      </div>
-      
-      <button type="submit" class="btn btn-primary">Send Message</button>
-    </form>
-  </div>
- </section>
- <!-- Footer Section -->
-<footer class="footer text-center py-4">
-  <div class="container">
-    <p>&copy; 2025 Shahinda Hayba. All Rights Reserved.</p>
-    <div class="social-links">
-      <a href="https://github.com/shahindaahmedhayba/angular.git" class="me-3"><i class="fab fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/shahinda-hayba-099024307?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="me-3"><i class="fab fa-linkedin"></i></a>
-      <a href="#" class="me-3"><i class="fab fa-twitter"></i></a>
+    <div class="grid-container">
+        <div class="row g-3">
+        <div class="col-6 col-sm-12">
+        <div class="grid-item">
+            <img src="Frame 24.png" alt="">
+            <div class="overlay">
+                <h3>Grooming</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nesciunt eos voluptatem deserunt odit voluptates cum consequatur.</p>
+                <button type="button" class="btn btn-primary text-white" data-bs-toggle="button">Read More</button>
+            </div>
+        </div>
+        </div>
+        </div>
+        <div class="grid-item">
+            <img src="Frame 25.png" alt="">
+            <div class="overlay">
+                <h3>Boarding</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nesciunt eos voluptatem deserunt odit voluptates cum consequatur.</p>
+                <button type="button" class="btn btn-primary text-white" data-bs-toggle="button">Read More</button>
+            </div>
+       </div>
+        <div class="grid-item adoption">
+            <img src="Frame 29.png" alt="">
+            <div class="overlay">
+                <h3>Adoption</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nesciunt eos voluptatem deserunt odit voluptates cum consequatur.</p>
+                <button type="button" class="btn btn-primary text-white" data-bs-toggle="button">Read More</button>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="Frame 27.png" alt="">
+            <div class="overlay">
+                <h3>Veterinary</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nesciunt eos voluptatem deserunt odit voluptates cum consequatur.</p>
+                <button type="button" class="btn btn-primary text-white" data-bs-toggle="button">Read More</button>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="Frame 26.png" alt="">
+            <div class="overlay">
+                <h3>Training</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nesciunt eos voluptatem deserunt odit voluptates cum consequatur.</p>
+                <button type="button" class="btn btn-primary text-white" data-bs-toggle="button">Read More</button>
+            </div>
+        </div>
     </div>
-  </div>
-</footer>
+    <hr class="hr" style="margin-left: 60px; width: 90%;" >
+    <div class="About US" style="margin-left: 100px; margin-top: 70px; margin-right: 30px;">
+        <h4> About US</h4>
+        <hr>
+    </div>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 order-lg-1 order-2">
+              <p>At Paws n’ Play, our journey began with a simple yet profound love for animals. Inspired by the unwavering companionship and joy they bring to our lives, we embarked on a mission to create a haven where pets and their owners alike could experience unparalleled happiness and care.
+               Driven by our passion for animal welfare, we hand-select each product and service with meticulous attention to quality and sustainability. From nutritious food and enriching toys to expert grooming and healthcare, every offering is carefully curated to meet the unique needs of our beloved furry friends.
+               But our commitment doesn't end there. We're dedicated to fostering a community that celebrates the bond between pets and their human companions. Through educational resources, compassionate support, and memorable experiences, we strive to empower pet owners to provide the best possible care for their furry family members.
+               At Paws n’ Play, customer satisfaction isn't just a goal – it's our guiding principle. We go above and beyond to ensure every interaction leaves tails wagging and hearts smiling. From personalized recommendations to attentive service, we're here to make your journey with your pet as joyful and fulfilling as possible.
+               Join us in our mission to create a world where every pet is cherished, every need is met, and every tail wags with happiness. Welcome to Paws n’ Play, where pets are family, and love knows no bounds.</p>
+           </div>
+            <div class="col-lg-6 d-none d-lg-block order-lg-2 order-1 text-center">   
+               <img src="Group 1.png" alt="">
+           </div>
+        </div> 
+        <hr>
+    </div>
+    <div class="Our Team" style="margin-left: 100px; margin-top: 70px; margin-right: 30px;">
+        <h4>Our Team</h4>
+        <hr>
+    </div> 
+    <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <img src="unsplash_eGbmOTQxF04.png" alt="">
+            <h5 class="mx-auto p-2">Demi Wilkinson</h5>
+               <p class="text-body-secondary">Intern Veterinarian</p>
+               <i class="bi bi-twitter"></i>
+               <i class="bi bi-linkedin"></i>
+               <i class="bi bi-dribbble"></i>
+          </div>
+          <div class="col">
+            <img src="unsplash_O13B7suRG4A.png" alt="">
+            <h5 class="mx-auto p-2">Phoenix Baker</h5>
+               <p class="text-body-secondary">Asst. Veterinarian</p>
+               <i class="bi bi-twitter"></i>
+               <i class="bi bi-linkedin"></i>
+               <i class="bi bi-dribbble"></i>
+          </div>
+          <div class="col">
+            <img src="unsplash_E6Vo_4i-3Xg.png" alt="">
+            <h5 class="mx-auto p-2">Lana Steiner</h5>
+                <p class="text-body-secondary">Resident Veterinarian</p>
+                <i class="bi bi-twitter"></i>
+                <i class="bi bi-linkedin"></i>
+                <i class="bi bi-dribbble"></i> 
+          </div>
+          <div class="col">
+             <img src="unsplash_DEQAyBEDRQE.png" alt="">
+             <h5 class="mx-auto p-2">Dr. Olivia Rhye</h5>
+               <p class="text-body-secondary">Senior Veterinarian</p>
+               <i class="bi bi-twitter"></i>
+               <i class="bi bi-linkedin"></i>
+               <i class="bi bi-dribbble"></i>
+          </div>
+          <hr class="hor" style="margin-top: 40px;">
+          <div class="Blogg">
+            <h4>Blog</h4>
+            <hr>
+          </div>
+          <div class="container mt-4">
+            <div class="row justify-content-center">
+               <div class="col-lg-6 order-lg-1">
+                  <h2>Milestone: 20,000 Pets Treated</h2>
+                  <p>Eget quis mi enim, leo lacinia pharetra, semper. Eget in volutpat mollis at volutpat lectus velit, sed auctor. Porttitor fames arcu quis fusce augue enim. Quis at habitant diam at. Suscipit tristique risus, at donec. In turpis vel et quam imperdiet. Ipsum molestie aliquet sodales id est ac volutpat. Eget quis mi enim, leo lacinia pharetra, semper. Eget in volutpat mollis at volutpat lectus velit, sed auctor. Porttitor fames arcu quis fusce augue enim. Quis at habitant diam at. Suscipit tristique risus, at donec. In turpis vel et quam imperdiet. Ipsum molestie aliquet sodales id est ac volutpat. </p>
+                  <h5>Renewed Target</h5>
+                   <p>Pharetra morbi libero id aliquam elit massa integer tellus. Quis felis aliquam ullamcorper porttitor. Pulvinar ullamcorper sit dictumst ut eget a, elementum eu. Maecenas est morbi mattis id in ac.</p> 
+                   <button type="button" class="btn btn-primary text-white" data-bs-toggle="button">Read more</button>
+               </div>
+                <div class="col-lg-6 order-lg-2">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/4s-oMgHjRFY" allowfullscreen></iframe>
+                    </div>
+               </div>
+            </div>
+        </div>
+        <hr class="her" style="margin-top: 60px;">
+ <footer class="bg-dark text-light pt-5 pb-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <h5>Get in touch</h5>
+                <form>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="First name">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Last name">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" placeholder="you@company.com">
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control" rows="3" placeholder="Message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Send message</button>
+                </form>
+            </div>
+            <div class="col-lg-6">
+                <h5>Contact Information</h5>
+                <p><strong>Email:</strong> hello@pawsnplay.com</p>
+                <p><strong>Live Chat:</strong> <a href="#" class="text-light">Start new chat</a></p>
+                <p><strong>Office:</strong> 123, Yaya Abatan st, Ogba Lagos.</p>
+                <p><strong>Phone:</strong> +234 901234 384</p>
+            </div>
+        </div>
+        <hr class="my-4 border-light">
+        <div class="row">
+            <div class="col-md-6">
+                <h6>Join our newsletter</h6>
+                <p>Be the first to receive latest updates on promo, sales, and offers.</p>
+            </div>
+            <div class="col-md-6">
+                <form class="d-flex">
+                    <input type="email" class="form-control me-2" placeholder="Enter your email">
+                    <button class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <hr class="my-4 border-light">
+        <div class="row">
+            <div class="col-md-3">
+                <h6>Paws n' Play</h6>
+                <p>Where wagging tails and purring hearts reign supreme!</p>
+            </div>
+            <div class="col-md-2">
+                <h6>Shop</h6>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-light">Pet Adoption</a></li>
+                    <li><a href="#" class="text-light">Nutrition</a></li>
+                    <li><a href="#" class="text-light">Pet Care</a></li>
+                    <li><a href="#" class="text-light">Pet Food</a></li>
+                    <li><a href="#" class="text-light">Pricing</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <h6>Company</h6>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-light">About Us</a></li>
+                    <li><a href="#" class="text-light">careers</a></li>
+                    <li><a href="#" class="text-light">Press</a></li>
+                    <li><a href="#" class="text-light">News</a></li>
+                    <li><a href="#" class="text-light">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <h6>Services</h6>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-light">Grooming</a></li>
+                    <li><a href="#" class="text-light">Boarding</a></li>
+                    <li><a href="#" class="text-light">Training</a></li>
+                    <li><a href="#" class="text-light">Veterinary</a></li>
+                    <li><a href="#" class="text-light">Support</a></li>
+                </ul>
+            </div>
+            <div class="col-md-1">
+                <h6>Social</h6>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-light">Twitter</a></li>
+                    <li><a href="#" class="text-light">LinkedIn</a></li>
+                    <li><a href="#" class="text-light">Facebook</a></li>
+                    <li><a href="#" class="text-light">AngelList</a></li>
+                    <li><a href="#" class="text-light">Dribbble</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <h6>Legal</h6>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-light">Terms</a></li>
+                    <li><a href="#" class="text-light">Privacy</a></li>
+                    <li><a href="#" class="text-light">Cookies</a></li>
+                    <li><a href="#" class="text-light">Licenses</a></li>
+                    <li><a href="#" class="text-light">Settings</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr class="my-4 border-light">
+     <div class="d-flex justify-content-between align-items-center">
+            <p class="mb-0">© 2024 Paws n' Play. All rights reserved.</p>
+            <div>
+                <a href="#" class="text-light me-3"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="text-light me-3"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="text-light me-3"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="text-light"><i class="bi bi-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>   
+ <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const buttons = document.querySelectorAll(".btn-filter");
+    const items = document.querySelectorAll(".filter-item");
+
+    buttons.forEach(button => {
+        button.addEventListener("click", function () {
+            let filter = this.getAttribute("data-filter");
+
+            items.forEach(item => {
+                if (filter === "all") {
+                    item.style.display = "block";
+                } else {
+                    if (item.classList.contains(filter)) {
+                        item.style.display = "block";
+                    } else {
+                        item.style.display = "none";
+                    }
+                }
+            });
+
+            buttons.forEach(btn => btn.classList.remove("btn-primary"));
+            this.classList.add("btn-primary");
+        });
+    });
+  });
+ </script>
 
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
+
+
+
